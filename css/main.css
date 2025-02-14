@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* main.css */
+.d_none{
+    display: none;
+}
+.grid{
+    display:grid;
+    width:100%;
+    padding:10px; /* 너비 100%를 초과 */
+    box-sizing: border-box; /* 너비값에 패딩, border값을 포함하여 계산하는 속성 */
+
+    grid-gap:10px;      
+    grid-template-columns: repeat(3, auto); /* 칸수 지정 */
+    grid-template-rows:repeat(3, auto); /* 줄수 지정 */
+    grid-template-areas: 
+    "slide slide i01"
+    "slide slide i02"
+    "i03 i04 i05"
+    ;
+}
+.grid img{width:100%;}
+.slide{
+    /*grid-area:1/1/3/3;*/
+    grid-area:slide;
+    overflow: hidden;
+    position: relative;
+}
+.item1{grid-area:i01;}
+.item2{grid-area:i02;}
+.item3{grid-area:i03;}
+.item4{grid-area:i04;}
+.item5{grid-area:i05;}
+
+.skypass{
+    padding: 20px 0;
+}
+.skypass img{
+    width: 100%;
+}

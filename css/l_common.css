@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+body{
+    font-family: "noto sans kr", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#333333;
+    font-size:0.75em; /* 가변단위 */
+}
+
+a{
+    color:#333333;
+    text-decoration: none;
+}
+/* 헤더서식 */
+header{
+    height: 68px;
+    position: relative;
+    background: rgb(55,169,193);
+}
+header > h1{
+    text-align: center;
+}
+header > h1 img{
+    height: 28px;
+    padding-top: 20px;
+}
+
+#t_btn, #login_btn{
+    position: absolute;
+    top: 10px;
+}
+#t_btn{
+    left: 10px;
+}
+#login_btn{
+    right: 10px;
+}
+
+/* 푸터영역 */
+footer{
+    background-color: #c2c2c2;
+    padding: 30px 0 0 10px;
+}
+footer nav{
+    line-height: 50px;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+}
+footer ul li{
+    text-align: center;
+}
+footer ul li:first-child a{
+    font-weight: bold;
+}
+footer ul li a{
+    font-size: 0.9rem;
+    line-height: 30px;
+}
+footer ul li a::after{
+    position: relative;
+    left: 15px;
+    content: '';
+    border-right: 1px solid #ffffff;
+}
+footer ul li:last-child a::after{
+    display: none;
+}
+footer p, footer address{
+    line-height: 30px;
+    text-align: center;
+}
